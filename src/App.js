@@ -4,6 +4,16 @@ import './App.css';
 import Form from "./components/Form";
 import TodoList from "./components/TodoList";
 
+// class App extends Component {
+//   render() {
+//     return (
+//       <div>
+//         <AiFillApple />
+//       </div>
+//     );
+//   }
+// }
+
 function App() {
   //State stuff
   const [inputText, setInputText] = useState("");

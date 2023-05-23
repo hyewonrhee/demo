@@ -1,4 +1,5 @@
 import React from "react";
+import{ FaHeart } from "react-icons/fa";
 
 const Todo = ({ text, todo, todos, setTodos }) => {
     //Events
@@ -20,6 +21,9 @@ const Todo = ({ text, todo, todos, setTodos }) => {
     };
     return(
         <div className="todo">
+            <div>
+                <FaHeart />
+            </div>
             <li className={`todo-item ${todo.completed ? "completed" : ''}`}>{text}</li>
             <button onClick={completeHandler} className="complete-btn">
                 <i className = "fas fa-check"></i>
